@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Continent/>} />
         <Route path='/Country' element={<Country/>} />
         <Route path='/CountryPlaces' element={<CountryPlaces/>} />
-        <Route path="/Trip/:TripId" element={<TripDetails/>} />
+        <Route path="/TripDetails" element={<TripDetails/>} />
       </Routes>
     </div>
   );
