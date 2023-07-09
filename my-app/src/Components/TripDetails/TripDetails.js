@@ -9,7 +9,7 @@ export function TripDetails(){
     return(
         <>
         <h1>{user.name}</h1>
-        <div>
+        <div className="tripSet">
             <img src={user.image} />
             <p>Description: {user.description}</p>
             <p>Ratings: {user.ratings}</p>

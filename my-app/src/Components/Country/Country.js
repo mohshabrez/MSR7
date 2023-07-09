@@ -11,7 +11,7 @@ export function Country(){
     return(
         <>
         <h1>I am country page</h1>
-        <div>
+        <div className="ImageSet">
             {user.countries.map((country) => {
                 return(
                     <div onClick={()=>handleClick(country)}>

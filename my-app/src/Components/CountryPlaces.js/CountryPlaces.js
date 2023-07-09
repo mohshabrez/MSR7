@@ -12,7 +12,7 @@ export function CountryPlaces(){
     return(
         <>
         <h1>I am Country Places</h1>
-        <div>
+        <div className="ImageSet">
         
             {user.destinations.map((destination) => {
                 return(

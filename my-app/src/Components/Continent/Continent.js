@@ -14,7 +14,7 @@ export function Continent(){
         <>
         <h1>Welcome to Trip Advisor</h1>
         <h3>Top continents for your next holiday</h3>
-        <div>
+        <div className="ImageSet">
             {TripData.continents.map((continent) => {
                 return(
                     <div onClick={()=>handleClick(continent)}>
