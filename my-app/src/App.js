@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Continent } from './Components/Continent/Continent';
 import { Country } from './Components/Country/Country';
 import { CountryPlaces } from './Components/CountryPlaces.js/CountryPlaces';
+import { TripDetails } from './Components/TripDetails/TripDetails';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Continent/>} />
         <Route path='/Country' element={<Country/>} />
         <Route path='/CountryPlaces' element={<CountryPlaces/>} />
+        <Route path="/Trip/:TripId" element={<TripDetails/>} />
       </Routes>
     </div>
   );

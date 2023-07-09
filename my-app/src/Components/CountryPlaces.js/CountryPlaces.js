@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 export function CountryPlaces(){
     const location = useLocation()
@@ -7,14 +7,18 @@ export function CountryPlaces(){
         <>
         <h1>I am Country Places</h1>
         <div>
+        
             {user.destinations.map((destination) => {
                 return(
                     <div>
+                    <Link to={`/Trip/${destination.id}`}>
                     <img src={destination.image}/>
                     <p>{destination.name}</p>
+                    </Link>
                     </div>
                 )
             })}
+           
         </div>
         </>
     )
